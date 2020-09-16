@@ -1,3 +1,0 @@
-[submodule "thirdparties/fcgi2"]
-	path = thirdparties/fcgi2
-	url = git@github.com:waiting/fcgi2.git
