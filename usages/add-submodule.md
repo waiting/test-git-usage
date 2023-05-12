@@ -18,3 +18,5 @@
 1. *.git/config* 中的引用去除
 2. ***[path/]repo*** 目录变空
 
+# 建议忽略子模块仓库脏更改
+在 *.gitmodules* 文件里对应的仓库配置加入 `ignore = dirty` 即可。

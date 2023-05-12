@@ -9,9 +9,12 @@
 
     git update-index --no-assume-unchanged FILE
 
+# 恢复全部
+    git update-index --no-assume-unchanged `git ls-files -v | grep -e "^[hsmrck]" | sed 's/^..//'`
+
 `FILE`同上
 
 # 查看当前被忽略的已提交的文件
 
-    git ls-files -v | grep -e "^[hsmrck]"
+    git ls-files -v | grep -e "^[hsmrck]" | sed 's/^..//'
 
